@@ -1,0 +1,75 @@
+27-04-2025 13:30:00 [INFO] Logging initialized. Log file: database/logs\webscraper_log_27-04-2025_13-30-00.txt
+27-04-2025 13:31:29 [INFO] Database initialized successfully
+27-04-2025 13:31:35 [INFO] URLs added successfully at 2025-04-27 13:31:35
+27-04-2025 13:34:52 [INFO] Formatted proxies: ['http://18.228.149.161:80', 'http://49.51.206.38:13001', 'http://8.215.15.163:8443', 'http://185.169.252.59:4857', 'http://44.219.175.186:80']
+27-04-2025 13:34:52 [INFO] Scrapy 2.12.0 started (bot: scrapybot)
+27-04-2025 13:34:52 [INFO] Versions: lxml 5.3.1.0, libxml2 2.11.7, cssselect 1.3.0, parsel 1.10.0, w3lib 2.3.1, Twisted 24.11.0, Python 3.10.10 (tags/v3.10.10:aad5f6a, Feb  7 2023, 17:20:36) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 25.0.0 (OpenSSL 3.4.1 11 Feb 2025), cryptography 44.0.2, Platform Windows-10-10.0.26100-SP0
+27-04-2025 13:34:52 [INFO] Enabled addons:
+[]
+27-04-2025 13:34:53 [INFO] Telnet Password: c249408bc54f942d
+27-04-2025 13:34:53 [WARNING] D:\its_adi\New folder\webscraper_v2\.venv\lib\site-packages\scrapy\extensions\feedexport.py:432: ScrapyDeprecationWarning: The `FEED_URI` and `FEED_FORMAT` settings have been deprecated in favor of the `FEEDS` setting. Please see the `FEEDS` setting docs for more details
+  exporter = cls(crawler)
+
+27-04-2025 13:34:53 [INFO] Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.throttle.AutoThrottle']
+27-04-2025 13:34:53 [INFO] Overridden settings:
+{'AUTOTHROTTLE_ENABLED': True,
+ 'AUTOTHROTTLE_MAX_DELAY': 5,
+ 'AUTOTHROTTLE_START_DELAY': 1,
+ 'CONCURRENT_REQUESTS': 8,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 4,
+ 'DOWNLOAD_DELAY': 2,
+ 'DOWNLOAD_TIMEOUT': 30,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_LEVEL': 'INFO',
+ 'RETRY_TIMES': 3,
+ 'USER_AGENT': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) '
+               'AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 '
+               'Safari/537.36'}
+27-04-2025 13:34:53 [INFO] Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+27-04-2025 13:34:53 [INFO] Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+27-04-2025 13:34:53 [INFO] Enabled item pipelines:
+[]
+27-04-2025 13:34:53 [INFO] Spider opened
+27-04-2025 13:34:53 [INFO] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+27-04-2025 13:34:53 [INFO] Telnet console listening on 127.0.0.1:6023
+27-04-2025 13:34:53 [CRITICAL] While calling system event trigger handler
+Traceback (most recent call last):
+  File "D:\its_adi\New folder\webscraper_v2\.venv\lib\site-packages\twisted\internet\base.py", line 518, in _continueFiring
+    callable(*args, **kwargs)
+  File "D:\its_adi\New folder\webscraper_v2\.venv\lib\site-packages\twisted\internet\base.py", line 951, in _reallyStartRunning
+    self._signals.install()
+  File "D:\its_adi\New folder\webscraper_v2\.venv\lib\site-packages\twisted\internet\_signals.py", line 149, in install
+    signal.signal(signal.SIGINT, self._sigInt)
+  File "C:\Users\anush\AppData\Local\Programs\Python\Python310\lib\signal.py", line 56, in signal
+    handler = _signal.signal(_enum_to_int(signalnum), _enum_to_int(handler))
+ValueError: signal only works in main thread of the main interpreter
+27-04-2025 13:34:53 [CRITICAL] While calling system event trigger handler
+Traceback (most recent call last):
+  File "D:\its_adi\New folder\webscraper_v2\.venv\lib\site-packages\twisted\internet\base.py", line 518, in _continueFiring
+    callable(*args, **kwargs)
+  File "D:\its_adi\New folder\webscraper_v2\.venv\lib\site-packages\scrapy\utils\ossignal.py", line 29, in install_shutdown_handlers
+    signal.signal(signal.SIGTERM, function)
+  File "C:\Users\anush\AppData\Local\Programs\Python\Python310\lib\signal.py", line 56, in signal
+    handler = _signal.signal(_enum_to_int(signalnum), _enum_to_int(handler))
+ValueError: signal only works in main thread of the main interpreter
