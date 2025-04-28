@@ -45,14 +45,14 @@ if exist requirements.txt (
         echo Failed to install dependencies.
         pause
         exit /b
-    ) else (
+    ) 
+) else (
     echo No requirements.txt found. Skipping dependency installation.
     echo You need to install dependencies manually.
     echo Please run: pip install -r requirements.txt
     echo Please Get the requirement.txt from the project repository.
     echo Exiting...
     )
-)
 REM Run GUI in hidden mode using pythonw.exe
 echo 🪄 Launching GUI silently...
 start "" "venv\Scripts\pythonssss.exe" gui.py
