@@ -55,7 +55,7 @@ if exist requirements.txt (
     )
 REM Run GUI in hidden mode using pythonw.exe
 echo 🪄 Launching GUI silently...
-start "" "venv\Scripts\pythonssss.exe" gui.py
+start "" "venv\Scripts\python.exe" gui.py
 echo GUI launched successfully.
 echo You can now close this batch window.
 
