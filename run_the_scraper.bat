@@ -61,4 +61,5 @@ echo You can now close this batch window.
 
 pause
 REM Optional: kill this batch window immediately
+
 exit
